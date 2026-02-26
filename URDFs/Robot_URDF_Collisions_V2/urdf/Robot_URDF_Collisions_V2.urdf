@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Robot_URDF_Collisions_V2">
+  <link
+    name="Base_Link_Collision">
+    <inertial>
+      <origin
+        xyz="-0.020496 -1.2099E-17 0.041301"
+        rpy="0 0 0" />
+      <mass
+        value="1.5719" />
+      <inertia
+        ixx="0.0036754"
+        ixy="3.2894E-19"
+        ixz="-0.00037791"
+        iyy="0.0034107"
+        iyz="1.9178E-20"
+        izz="0.0049558" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Collisions_V2/meshes/Base_Link_Collision.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.76078 0.4 0.18039 0.3" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Collisions_V2/meshes/Base_Link_Collision.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link_1_Collision">
+    <inertial>
+      <origin
+        xyz="-3.8377E-18 7.2245E-19 0.028951"
+        rpy="0 0 0" />
+      <mass
+        value="0.11977" />
+      <inertia
+        ixx="5.4579E-05"
+        ixy="1.935E-21"
+        ixz="-6.7437E-21"
+        iyy="5.6798E-05"
+        iyz="-5.9115E-21"
+        izz="4.0198E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Collisions_V2/meshes/Link_1_Collision.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.76078 0.4 0.18039 0.3" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Collisions_V2/meshes/Link_1_Collision.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.09"
+      rpy="0 0 0" />
+    <parent
+      link="Base_Link_Collision" />
+    <child
+      link="Link_1_Collision" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="10"
+      velocity="100" />
+  </joint>
+  <link
+    name="Link_2_Collision">
+    <inertial>
+      <origin
+        xyz="-0.08404 -0.0225 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.035" />
+      <inertia
+        ixx="1.2637E-05"
+        ixy="-8.0909E-20"
+        ixz="-2.9657E-21"
+        iyy="5.5313E-05"
+        iyz="3.3571E-21"
+        izz="6.4304E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Collisions_V2/meshes/Link_2_Collision.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Collisions_V2/meshes/Link_2_Collision.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint2"
+    type="revolute">
+    <origin
+      xyz="0 0.0225 0.045"
+      rpy="0 0 0" />
+    <parent
+      link="Link_1_Collision" />
+    <child
+      link="Link_2_Collision" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="10"
+      velocity="100" />
+  </joint>
+  <link
+    name="Link_3_Collision">
+    <inertial>
+      <origin
+        xyz="-0.087452 -0.0275 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.040535" />
+      <inertia
+        ixx="1.9849E-05"
+        ixy="-6.0561E-20"
+        ixz="-6.5132E-21"
+        iyy="5.8759E-05"
+        iyz="1.6303E-20"
+        izz="7.4385E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Collisions_V2/meshes/Link_3_Collision.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Collisions_V2/meshes/Link_3_Collision.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint3"
+    type="revolute">
+    <origin
+      xyz="-0.107 0.005 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_2_Collision" />
+    <child
+      link="Link_3_Collision" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="10"
+      velocity="100" />
+  </joint>
+  <link
+    name="Link_4_Collision">
+    <inertial>
+      <origin
+        xyz="-0.050083 -0.035 5.5511E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.042878" />
+      <inertia
+        ixx="3.0659E-05"
+        ixy="-8.1522E-21"
+        ixz="6.8123E-21"
+        iyy="2.5977E-05"
+        iyz="2.7439E-21"
+        izz="5.1033E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Collisions_V2/meshes/Link_4_Collision.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Collisions_V2/meshes/Link_4_Collision.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint4"
+    type="revolute">
+    <origin
+      xyz="-0.107 0.0075 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_3_Collision" />
+    <child
+      link="Link_4_Collision" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="10"
+      velocity="100" />
+  </joint>
+  <link
+    name="End_Effector_Collision">
+    <inertial>
+      <origin
+        xyz="-0.008713 -0.013 -5.5511E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.075698" />
+      <inertia
+        ixx="5.2688E-05"
+        ixy="-4.4891E-23"
+        ixz="-8.4204E-22"
+        iyy="2.2364E-05"
+        iyz="-8.3488E-21"
+        izz="5.1763E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Collisions_V2/meshes/End_Effector_Collision.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.76078 0.4 0.18039 0.3" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Collisions_V2/meshes/End_Effector_Collision.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint5"
+    type="fixed">
+    <origin
+      xyz="-0.079479 -0.022 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link_4_Collision" />
+    <child
+      link="End_Effector_Collision" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

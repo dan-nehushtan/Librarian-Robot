@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="CW2_Complete_Robot_URDF_2025_V6">
+  <link
+    name="Base_Link">
+    <inertial>
+      <origin
+        xyz="-0.00013361 8.272E-18 0.13446"
+        rpy="0 0 0" />
+      <mass
+        value="164.01" />
+      <inertia
+        ixx="7.5027"
+        ixy="1.737E-19"
+        ixz="-0.0001267"
+        iyy="7.503"
+        iyz="1.2022E-19"
+        izz="7.5035" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CW2_Complete_Robot_URDF_2025_V6/meshes/Base_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.50196 0.50196 0.50196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CW2_Complete_Robot_URDF_2025_V6/meshes/Base_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Library">
+    <inertial>
+      <origin
+        xyz="-0.078778 -0.036534 -0.07619"
+        rpy="0 0 0" />
+      <mass
+        value="69.403" />
+      <inertia
+        ixx="3.2411"
+        ixy="0.13376"
+        ixz="0.54614"
+        iyy="2.7963"
+        iyz="0.28982"
+        izz="4.2229" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CW2_Complete_Robot_URDF_2025_V6/meshes/Library.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://CW2_Complete_Robot_URDF_2025_V6/meshes/Library.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Library_Fixed"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Base_Link" />
+    <child
+      link="Library" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

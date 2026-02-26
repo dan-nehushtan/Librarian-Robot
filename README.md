@@ -277,14 +277,3 @@ The project followed an iterative development approach:
 A demonstration video of the robot performing a pick-and-place operation is available in the [`Recordings/`](Recordings/) folder.
 
 ---
-
-## Authors
-
-- **Dan** — MATLAB scripting, collision detection, pick-and-place logic
-- **Louie** — URDF modelling, SolidWorks-to-URDF pipeline, coordinate systems
-
----
-
-<p align="center">
-  <sub>Built as coursework for a Robotics module — demonstrating the full pipeline from CAD to autonomous control.</sub>
-</p>
